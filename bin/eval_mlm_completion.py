@@ -8,6 +8,8 @@ import collections
 import logging
 import argparse
 from typing import *
+from typing_extensions import Literal
+
 
 import numpy as np
 import pandas as pd

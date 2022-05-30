@@ -15,6 +15,7 @@ import itertools
 import collections
 import logging
 from typing import *
+from typing_extensions import Literal
 
 import torch
 from torch.utils.data import Dataset

@@ -8,6 +8,7 @@ import os, sys
 import json
 import logging
 from typing import *
+from typing_extensions import Literal
 
 import torch
 import torch.nn as nn

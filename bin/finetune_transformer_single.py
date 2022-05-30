@@ -13,6 +13,7 @@ import json
 import itertools
 import argparse
 from typing import *
+from typing_extensions import Literal
 
 import tqdm
 
