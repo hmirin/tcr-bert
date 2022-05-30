@@ -9,7 +9,7 @@ from functools import lru_cache
 import itertools
 import collections
 from typing import *
-from functools import cached_property
+from backports.cached_property import cached_property
 from math import floor
 
 import numpy as np
