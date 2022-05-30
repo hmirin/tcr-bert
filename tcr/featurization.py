@@ -5,7 +5,7 @@ Featurization code
 import os, sys
 import logging
 import tempfile
-from functools import cache, lru_cache
+from functools import lru_cache
 import itertools
 import collections
 from typing import *
@@ -336,7 +336,7 @@ def remove_whitespace(seq: str) -> str:
     return "".join(seq.split())
 
 
-@cache
+@lru_cache(maxsize=None)
 def all_possible_kmers(alphabet: Iterable[str] = AMINO_ACIDS, k: int = 3) -> List[str]:
     """
     Return all possible kmers
